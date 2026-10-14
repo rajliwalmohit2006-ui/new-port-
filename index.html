@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit | Front-End Web Developer & AI Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-code">&lt;</span>Mohit<span class="logo-dot">.</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#services" class="nav-item"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+        <li><a href="#projects" class="nav-item"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#contact" class="nav-item"><i class="fa-solid fa-comments"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <button id="open-ai-chat-btn" class="ai-nav-btn">
+          <i class="fa-solid fa-robot"></i>
+          <span>Ask AI</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-pulse"></span>
+          <span>Available for Projects &amp; Hiring</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Mohit</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          I am a <span id="typing-text" class="typing-highlight"></span><span class="cursor">&nbsp;</span>
+        </h2>
+
+        <p class="hero-description">
+          Passionate Front-End Web Developer crafting modern, high-performance,
+          and visually captivating web applications with HTML, CSS, JavaScript,
+          and Tailwind CSS.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-fire"></i> View My Work
+          </a>
+
+          <button class="btn btn-ai trigger-chat">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Chat with AI Assistant
+          </button>
+
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Responsive Design</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-card">
+            <span class="stat-number">&lt;24h</span>
+            <span class="stat-label">Fast Response</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="tech-floating-card card-js">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-floating-card card-react">
+            <i class="fa-brands fa-react"></i>
+            <span>React</span>
+          </div>
+
+          <div class="tech-floating-card card-tailwind">
+            <i class="fa-solid fa-wind"></i>
+            <span>Tailwind</span>
+          </div>
+
+          <div class="tech-floating-card card-html">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML5/CSS3</span>
+          </div>
+
+          <div class="code-editor-mockup">
+            <div class="editor-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="editor-title">Developer.js</span>
+            </div>
+
+            <div class="editor-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-str">'Mohit'</span>,
+  <span class="code-key">role</span>: <span class="code-str">'Front-End Developer'</span>,
+  <span class="code-key">passions</span>: [<span class="code-str">'UI/UX'</span>, <span class="code-str">'Clean Code'</span>, <span class="code-str">'AI'</span>],
+  <span class="code-key">status</span>: <span class="code-str">'Ready to Build Awesome Websites'</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Discover</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A brief look into who I am and what drives my passion for web development</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-about">
+          <div class="about-icon-badge">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <h3>Who is Mohit?</h3>
+
+          <p>
+            I'm a dedicated and enthusiastic <strong>Front-End Web Developer</strong>
+            with a strong foundation in modern web technologies.
+          </p>
+
+          <p>
+            I love transforming creative ideas and design mockups into fast,
+            responsive, and intuitive web experiences.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i><span>Pixel-Perfect Implementation</span></div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i><span>Clean &amp; Maintainable Code</span></div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i><span>Mobile-First Responsive Layouts</span></div>
+            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i><span>Modern JavaScript &amp; CSS Animations</span></div>
+          </div>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div>
+              <h4>Focused on Solutions</h4>
+              <p>Solving UI problems with user-centric, elegant code.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div>
+              <h4>Fast Learner</h4>
+              <p>Constantly staying updated with modern frameworks and AI tools.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div>
+              <h4>Collaborative</h4>
+              <p>Great communication, on-time delivery, and reliable teamwork.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Expertise</span>
+        <h2 class="section-title">My Tech <span class="gradient-text">Stack</span></h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, SEO optimization, and web accessibility standards.</p>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS3 &amp; Modern Styles</h3>
+          <p>Flexbox, CSS Grid, Custom Properties, and fluid responsive layouts.</p>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, asynchronous operations, event handling, and logic.</p>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon tailwind"><i class="fa-solid fa-wind"></i></div>
+          <h3>Tailwind CSS</h3>
+          <p>Utility-first styling, custom themes, and rapid UI development.</p>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
+          <h3>React.js</h3>
+          <p>Component-driven development, hooks, state management, and SPAs.</p>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon git"><i class="fa-brands fa-git-alt"></i></div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, branch management, collaboration, and code hosting.</p>
+          <span class="skill-level">Proficient</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-gem"></i> Offerings</span>
+        <h2 class="section-title">What I Can Do For <span class="gradient-text">You</span></h2>
+        <p class="section-subtitle">High-quality services tailored to boost your online presence</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Custom Web Development</h3>
+          <p>Building responsive websites with clean code, smooth animations, and fast load times.</p>
+          <ul class="service-points">
+            <li><i class="fa-solid fa-check"></i> Clean HTML5/CSS3/JS</li>
+            <li><i class="fa-solid fa-check"></i> Cross-browser Compatibility</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured-service">
+          <div class="popular-tag">Most Popular</div>
+          <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>UI/UX &amp; Frontend Design</h3>
+          <p>Transforming modern concepts into pixel-perfect, interactive, responsive interfaces.</p>
+          <ul class="service-points">
+            <li><i class="fa-solid fa-check"></i> Tailwind CSS &amp; Flexbox</li>
+            <li><i class="fa-solid fa-check"></i> Engaging Micro-interactions</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>Website Redesign &amp; Speed</h3>
+          <p>Revamping legacy websites with contemporary themes and speed optimization.</p>
+          <ul class="service-points">
+            <li><i class="fa-solid fa-check"></i> High Performance</li>
+            <li><i class="fa-solid fa-check"></i> SEO &amp; Accessibility Friendly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-folder-open"></i> Portfolio
+        </span>
+
+        <h2 class="section-title">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+
+        <p class="section-subtitle">
+          Explore some of the web projects I have crafted
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-banner banner-ai">
+            <i class="fa-solid fa-lock banner-icon"></i>
+            <span class="project-badge">Security Project</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <h3>Unbreakable Password</h3>
+
+            <p>
+              A password-focused web project with a clean and modern interface.
+            </p>
+
+            <div class="project-links">
+              <a href="https://unbreakable-password.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-banner banner-shop">
+            <i class="fa-solid fa-shoe-prints banner-icon"></i>
+            <span class="project-badge">shoes shop website</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <h3>SoleCraft Shoes</h3>
+
+            <p>
+              A modern and unique shoe shopping experience.
+            </p>
+
+            <div class="project-links">
+              <a href="https://shole-craft.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-banner banner-app">
+            <i class="fa-solid fa-globe banner-icon"></i>
+            <span class="project-badge">Jewelry Website</span>
+          </div>
+
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <h3>Web Mohit</h3>
+
+            <p>
+              A modern Jewelry Website.
+            </p>
+
+            <div class="project-links">
+              <a href="https://web-mohti.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Send me a message!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card">
+          <div class="contact-status-badge">
+            <span class="status-pulse"></span>
+            <span>Available for Opportunities</span>
+          </div>
+
+          <h3>Let's Build Something Great Together</h3>
+
+          <p>
+            I am available for freelance work, modern UI projects, and full-time
+            frontend developer roles.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="icon-circle instagram-circle">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <span class="detail-label">Instagram</span>
+                <a href="https://instagram.com/_xmohit21" target="_blank" rel="noopener noreferrer" class="detail-val">@_xmohit21</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="detail-label">Location</span>
+                <span class="detail-val">Hapur - India</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <span class="detail-label">Response Time</span>
+                <span class="detail-val">Within 24 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3>Send a Message</h3>
+            <p>Fill out the details below and I'll get back to you promptly.</p>
+          </div>
+
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6c54e566-553b-448d-ba11-668a9a891280" />
+            <input type="hidden" name="from_name" value="Mohit Portfolio" />
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact_handle">Your Instagram / Contact</label>
+              <div class="input-with-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <input type="text" id="contact_handle" name="contact_handle" placeholder="e.g. @_xmohit21 or Phone" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+                <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Hiring" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-with-icon textarea-icon">
+                <i class="fa-solid fa-message"></i>
+                <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-code">&lt;</span>Mohit<span class="logo-dot">.</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p>Crafting responsive, clean, and intuitive web experiences.</p>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2026 Mohit. Built with passion &amp; AI innovation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <div class="toast-content">
+      <span class="toast-title" id="toast-title">Success</span>
+      <span class="toast-msg" id="toast-msg">Message sent successfully!</span>
+    </div>
+  </div>
+
+  <div id="ai-chat-widget" class="ai-widget-wrapper">
+    <button id="ai-chat-trigger" class="ai-floating-btn" aria-label="Open AI Assistant">
+      <div class="ai-pulse-ring"></div>
+      <div class="ai-btn-inner">
+        <i class="fa-solid fa-wand-magic-sparkles ai-icon"></i>
+        <i class="fa-solid fa-xmark close-icon"></i>
+      </div>
+      <span class="ai-tooltip">Ask Mohit's AI</span>
+    </button>
+
+    <div id="ai-chat-modal" class="ai-chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="ai-avatar">
+            <i class="fa-solid fa-robot"></i>
+            <span class="online-indicator"></span>
+          </div>
+
+          <div>
+            <div class="ai-name-row">
+              <h4>Mohit's AI Assistant</h4>
+              <span class="ai-version-chip">v2.0</span>
+            </div>
+            <p class="ai-status">⚡ Always online to help</p>
+          </div>
+        </div>
+
+        <div class="chat-header-controls">
+          <button id="clear-chat-btn" title="Clear Conversation" class="control-btn">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+
+          <button id="close-chat-btn" title="Close Chat" class="control-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="chat-body" id="chat-messages">
+        <div class="chat-message ai-message">
+          <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+
+          <div class="msg-bubble">
+            <p>👋 <strong>Namaste &amp; Hello!</strong> I'm Mohit's AI Assistant. How can I help you today?</p>
+            <p class="msg-hint">
+              You can ask me about Mohit's <strong>skills</strong>,
+              <strong>projects</strong>, <strong>services</strong>,
+              <strong>Instagram</strong>, or how to <strong>hire</strong> him!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-chips-wrapper">
+        <span class="chips-label">Quick questions:</span>
+
+        <div class="quick-chips" id="quick-chips">
+          <button class="chip-btn" data-query="Who is Mohit?">👤 About Mohit</button>
+          <button class="chip-btn" data-query="What skills do you have?">⚡ Tech Stack</button>
+          <button class="chip-btn" data-query="Show me your projects">🚀 Best Projects</button>
+          <button class="chip-btn" data-query="What is Mohit's Instagram?">📸 Instagram</button>
+          <button class="chip-btn" data-query="What services do you offer?">💼 Services</button>
+        </div>
+      </div>
+
+      <div class="chat-footer">
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Type your question about Mohit..." autocomplete="off" required />
+          <button type="submit" id="chat-send-btn" aria-label="Send message">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
